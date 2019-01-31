@@ -1,0 +1,213 @@
+===== 東風戦ランキング超上級 575卓 開始 2002/03/03 18:37 =====
+  持点27000 [1]松戸の俊 R2015 [2]菌太郎 R2195 [3]シャモア R1931 [4]YZKTR R1902
+  東1局 0本場(リーチ0) YZKTR 3000 松戸の俊 -1500 菌太郎 -1000 シャモア -500 
+    30符 二飜ツモ リーチ 門前清模和 
+    [1北]1m2m7m8m9m2p4p6p3s4s7s8s9s
+    [2東]1m3m6m9m8p4s8s東南西白白発
+    [3南]2m2m2p7p8p1s2s5s8s9s西発中
+    [4西]6m7m4p5p6p7p8p9p9p2s2s6s東
+    [表ドラ]2p [裏ドラ]9m
+    * 2G9m 2d西 3G1s 3d西 4G5p 4d東 1G5s 1d1m 2G発 2d東 3G1m 3D1m 4G2s 4d6s
+    * 1G5s 1d2m 2C1m3m 2d4s 3G3s 3d1s 4G9s 4D9s 1G9m 1D9m 2N 2d8s 3G北 3D北
+    * 4G9p 4R 4d5p 1G3p 1R 1d6p 2G5s 2d発 3G1p 3d発 4G白 4D白 1G4m 1D4m 2G南
+    * 2d発 3G6m 3d9s 4G8m 4A
+
+  東2局 0本場(リーチ0) シャモア 3000 松戸の俊 -2000 菌太郎 -1000 
+    40符 一飜ロン リーチ 
+    [1西]6m8m8m2p5p8p4s7s8s北白中中
+    [2北]1m4m3p4p6p8p9p1s2s3s7s9s北
+    [3東]4m5m5m6m9m7p1s3s6s南南西発
+    [4南]4m6m1p3p4p4p6p5s6s6s9s東発
+    [表ドラ]2m [裏ドラ]9p
+    * 3G2s 3d西 4G3s 4d9s 1G6p 1d2p 2G4s 2d1m 3G8s 3d9m 4G5s 4d1p 1G3m 1d北
+    * 2G7p 2d北 3G3m 3d発 4G8s 4d3s 1G南 1D南 2G5p 2d4m 3G白 3D白 4G5p 4d発
+    * 1G西 1d白 2G1s 2d9s 3G4s 3d7p 4G9p 4d東 1G6p 1d4s 2G7m 2d7s 3G4m 3R 3d4s
+    * 4G4p 4d9p 1G西 1d西 2G4s 2D4s 3G9p 3D9p 4G2s 4d6p 1G北 1D北 2G6m 2R 2d9p
+    * 3G5s 3D5s 4G5m 4d2s 1G9m 1d西 2G2p 2D2p 3G2m 3D2m 4G8s 4d5s 1G1p 1d7s 3A
+
+  東2局 1本場(リーチ0) シャモア 19300 YZKTR -18300 松戸の俊 -1000 
+    ハネ満貫ロン リーチ 一発 ドラ4 
+    [1西]4m5m5m8m1p2p2s3s4s9s東南西
+    [2北]3m3m4p6p7p8p2s5s5s9s9s南中
+    [3東]2m6m2p3p3p9p4s5s6s8s東北発
+    [4南]1m2m4m5m8m1p4p8p8p8p2s4s9s
+    [表ドラ]発 [裏ドラ]発
+    * 3G6s 3d北 4G7s 4d1p 1G4s 1d9s 2G4p 2d南 3G6m 3d9p 4G6m 4d9s 1G1p 1d南
+    * 2G東 2d中 3G7m 3d6m 4G西 4d7s 1G5m 1d8m 2G4m 2d東 3G北 3D北 4G6s 4d西
+    * 1G発 1d西 2G2m 2d2s 3G5p 3D5p 4G1m 4d4p 1G3p 1d東 2G7m 2d9s 3G9p 3D9p
+    * 4G9m 4d1m 1G1m 1D1m 2G7p 2d9s 3G7s 3d東 4G北 4D北 1G南 1D南 2G白 2D白
+    * 3G中 3D中 4G7s 4d4s 1G2m 1d1p 2G発 2d7m 3G9p 3D9p 4G3s 4D3s 1G3m 1d4s
+    * 2G7p 2d8p 3G西 3D西 4G8m 4d2s 1G8s 1R 1D8s 2G5s 2d6p 3G4p 3d2m 4G2p 4d9m
+    * 1G8m 1D8m 2G6p 2D6p 3G3m 3D3m 4G5p 4d2m 1G北 1D北 2G東 2D東 3G8s 3d3p
+    * 4G3p 4d1m 1G3s 1D3s 2G3s 2D3s 3G白 3D白 4G2p 4d3p 1G9m 1D9m 2G9p 2D9p
+    * 3G発 3R 3d8s 4G1s 4d8m 3A
+
+  東2局 2本場(リーチ0) シャモア 3500 YZKTR -3500 
+    30符 二飜ロン 場風 自風 
+    [1西]2m3m5m6m9m6p2s3s4s5s東南発
+    [2北]3m5m7m2p4p5p4s6s7s7s8s北白
+    [3東]4m7m1p1p7p3s4s5s7s東南西発
+    [4南]1m4m8m9m5p8p9p1s1s6s北北発
+    [表ドラ]5p [裏ドラ]9p
+    * 3G6m 3d西 4G1p 4d4m 1G7m 1d南 2G2s 2d北 3G東 3d南 4G中 4d5p 1G3p 1d東 3N
+    * 3d発 4G1m 4d6s 1G8s 1d発 2G西 2D西 3G南 3D南 4G4p 4D4p 1G7m 1d8s 2G白
+    * 2d2p 3G2m 3d7s 4G8s 4D8s 1G6s 1d6p 2G3m 2d7s 3G9m 3D9m 4G7p 4d発 1G5m
+    * 1d3p 2G4p 2D4p 3G8p 3d4m 4G1s 4d1p 1G5s 1d9m 2G6p 2d白 3G9p 3d2m 4G8m
+    * 4D8m 3A
+
+  東2局 3本場(リーチ0) 松戸の俊 1500 シャモア 1500 菌太郎 -1500 YZKTR -1500 
+    流局
+    [1西]1m2m3m7m3p8p2s4s8s東西北中
+    [2北]2p3p6p9p2s3s5s7s東南南西北
+    [3東]2m2m4m4m7m1p2p2p4s7s西西発
+    [4南]1m4m5m8m1p4p5p5p7p1s1s9s北
+    [表ドラ]2s [裏ドラ]8s
+    * 3G7s 3d4s 4G4p 4d1p 1G9p 1d北 2G5p 2d9p 3G東 3d1p 4G9p 4d9s 1G中 1d8s
+    * 2G6p 2d西 3G4m 3d7m 4G6m 4d1m 1G8p 1d東 2G8m 2d東 3G3s 3d東 4G8s 4d北
+    * 1G5s 1d西 3N 3d3s 4G8m 4d9p 1G9m 1d9p 2G9s 2d北 3G5s 3D5s 4G6m 4d1s 1G3s
+    * 1d3p 2G3m 2d6p 3G8s 3D8s 4G南 4d1s 1G発 1D発 2G6m 2d3m 3G8p 3D8p 4G9m
+    * 4D9m 1G2s 1d8p 2G白 2d9s 3G6s 3D6s 4G中 4d南 1G3m 1d8p 2G北 2D北 3G4s
+    * 3D4s 4G9s 4d7p 1G1m 1d9m 2G1p 2d南 3G発 3d2m 4G6s 4d9s 1G9m 1d3m 2G5m
+    * 2d南 3G東 3d2m 4G9m 4D9m 1G6s 1d1m 2G4p 2d5s 3G白 3D白 4G発 4D発 3N 3d東
+    * 4G3m 4d中 1N 1d3s 2G9s 2d1p 3G3p 3D3p 4G南 4D南 1G4s 1D4s 2G6m 2d3p 3G3s
+    * 3D3s 4G1p 4D1p 1G5s 1D5s 2G8p 2d3s 3G7m 3D7m 4G2s 4d8s 1G5m 1D5m 2G7p
+    * 2d8p 3G白 3D白 4G8m 4d6s 1G4p 1D4p 2G2m 2d白 3G1m 3D1m 4G7p 4d4p 1G5m
+    * 1D5m 2G6p 2d5m
+
+  東2局 4本場(リーチ0) 菌太郎 3300 松戸の俊 -700 シャモア -900 YZKTR -1700 
+    30符 一飜ツモ 自風 
+    [1西]1m3m6m7m8m9m3p4p5p3s5s西発
+    [2北]3m5m8m8m2p5p6p8p3s6s8s8s南
+    [3東]2m3m1p5p8p4s6s7s9s東南西中
+    [4南]1m3m4m7m8m9m1p2p6p2s8s東南
+    [表ドラ]8p [裏ドラ]4p
+    * 3G2s 3d西 4G東 4d1m 1G白 1d西 2G北 2d南 3G4p 3d1p 4G5p 4d8s 1G1m 1d発
+    * 2G北 2d2p 3G1p 3d南 4G白 4d南 1G6s 1d白 2G5s 2d3s 3G南 3D南 4G東 4d白
+    * 1G中 1D中 2G2s 2D2s 3G発 3d1p 4G9s 4D9s 1G北 1D北 2N 2d5m 3G3p 3d9s 4G8p
+    * 4d2p 1G6p 1d3s 2G4p 2d3m 3G6m 3d中 4G9s 4D9s 1G2m 1d9m 2G6m 2d8p 3G9m
+    * 3D9m 4G3s 4d1p 1G8s 1D8s 2N 2d6m 3G6m 3d発 4G1s 4d8p 1G8p 1d1m 2G発 2D発
+    * 3G1p 3D1p 4G2m 4d5p 1G白 1D白 2G中 2D中 3G9s 3d8p 4G9p 4R 4d6p 1G7p 1d8p
+    * 2G7s 2A
+
+  東3局 0本場(リーチ0) YZKTR 2900 松戸の俊 -2900 
+    30符 二飜ロン 白 ドラ1 
+    [1南]3m4m6m3p9p1s2s3s6s東南南白
+    [2西]1m4m6m7m8m1p1p2p9p3s4s6s7s
+    [3北]2m3m6m8m4p6p7p9s9s9s東発中
+    [4東]1m4m7m9m9m2p3p1s5s南西白白
+    [表ドラ]3p [裏ドラ]6m
+    * 4G9p 4d1s 1G4s 1d9p 2G7s 2d1m 3G4p 3d中 4G中 4d9p 1G発 1d6m 2G3m 2d9p
+    * 3G1p 3D1p 4G5s 4d西 1G西 1D西 2G7p 2D7p 3G2s 3d発 4G1m 4d南 1G発 1d4m
+    * 2G8p 2D8p 3G2p 3D2p 4G8p 4d中 1G5s 1d3m 2G2m 2d2p 3G5m 3d8m 4G北 4d8p
+    * 1G6p 1D6p 2G4p 2D4p 3G5p 3d2s 4G5m 4d北 1G1m 1D1m 2G8p 2D8p 3G2s 3D2s
+    * 4G6p 4D6p 1G7m 1D7m 2G8p 2D8p 3G3m 3d東 4G4p 4d7m 1G北 1d3p 2G8m 2d7s
+    * 3G中 3D中 4G6p 4D6p 1G9m 1D9m 4N 4d5s 1G5p 1D5p 2G2m 2d8m 3G5s 3D5s 4G4m
+    * 4d5s 1G8s 1d東 2G4s 2D4s 3G2m 3d3m 4C4m5m 4d4m 1G7m 1D7m 2G3s 2D3s 3G東
+    * 3D東 4G3p 4D3p 1G北 1d8s 2G1p 2d3s 3G西 3D西 4G6s 4D6s 1G発 1d白 4A
+
+  東3局 1本場(リーチ0) シャモア 2300 菌太郎 -1300 松戸の俊 -1000 
+    30符 一飜ロン 白 
+    [1南]4m5m7m8m8m3p5p2s3s6s7s南発
+    [2西]2m3m3m3m5m9m1s1s3s5s6s6s8s
+    [3北]2m3m4m7m1p2p4p4p8p8s白発中
+    [4東]2p2p3p5p8p9p1s3s5s9s南北中
+    [表ドラ]北 [裏ドラ]2p
+    * 4G6m 4d南 1G1p 1d南 2G9s 2D9s 3G5s 3d1p 4G7m 4d9s 1G5p 1d発 2G北 2d9m
+    * 3G西 3D西 4G6m 4d9p 1G3p 1d8m 2G8m 2D8m 3G6p 3d発 4G8s 4D8s 1G白 1D白
+    * 2G9m 2D9m 3G1p 3D1p 4G9s 4d8p 1G2m 1D2m 2G発 2d北 3G東 3d8s 4G2s 4d9s
+    * 1G北 1d3p 2G4s 2d発 3G2s 3D2s 4G9s 4D9s 1G2s 1d5p 2G8p 2D8p 3G南 3D南
+    * 4G5s 4d中 1G3p 1d3p 2G1m 2d6s 3G白 3d2p 4G2p 4d5p 1G5m 1d2s 2G南 2D南
+    * 3G4m 3d中 4G9p 4D9p 1G中 1D中 2G9m 2D9m 3G4p 3d7m 4G7m 4d3p 1G4s 1d北
+    * 2G7p 2D7p 3C6p8p 3d5s 4G7s 4d北 1G8s 1d4m 2G1m 2D1m 3C2m3m 3d東 4G8p
+    * 4D8p 1G6m 1R 1d1p 2G6s 2d2m 3G4s 3d4m 4G1s 4D1s 1G5p 1D5p 2G発 2D発 3G7s
+    * 3d4m 4G白 4D白 3N 3d4s 4G1m 4D1m 1G2m 1D2m 2G3s 2d1m 3G6p 3d7s 4G9p 4D9p
+    * 1G7p 1D7p 2G6p 2D6p 3A
+
+  東4局 0本場(リーチ0) 菌太郎 1300 YZKTR -1300 
+    40符 一飜ロン 中 
+    [1東]2m8m9m2p3p7p7p8p9p5s7s西白
+    [2南]5m6m4p1s4s5s7s8s東南西発中
+    [3西]6m7m8m1p1p6p9p2s2s東南南西
+    [4北]1m3m6m7m5p7p8p4s6s8s東北中
+    [表ドラ]南 [裏ドラ]2p
+    * 1G6m 1d9m 2G5s 2d西 3G4p 3d9p 4G9m 4d4s 1G5p 1d西 2G9s 2d1s 3G2m 3d西
+    * 4G5m 4d6s 1G2s 1D2s 2G5s 2d東 3G5p 3d東 4G3p 4d8s 1G7m 1d2m 2G中 2d南
+    * 3G2m 3d2s 4G2s 4D2s 1G2m 1D2m 2G8p 2d発 3G8p 3d2m 4G7s 4D7s 1G9m 1d6m
+    * 2G3p 2d8p 3G2p 3d2m 4G4p 4d東 1G発 1D発 2G7s 2D7s 3G4m 3D4m 4G北 4d9m
+    * 1G1m 1D1m 2G5p 2d4s 3G7m 3D7m 4G発 4d1m 1G4m 1D4m 2G1s 2D1s 3G3p 3d8p
+    * 4G白 4d3m 1G1s 1D1s 2G1m 2D1m 3G2p 3d2s 4G3s 4D3s 1G9s 1d7p 2G3m 2D3m
+    * 3G発 3D発 4G4s 4D4s 1G1p 1d5p 2G5m 2d6m 3G4p 3D4p 4G北 4d発 1G西 1d5s
+    * 2G3m 2D3m 3G8s 3D8s 4G8m 4d中 2A
+
+  ---- 試合結果 ----
+  1位 シャモア      +44
+  2位 菌太郎        +1
+  3位 松戸の俊      -14
+  4位 YZKTR         -31
+----- 575卓 終了 2002/03/03 19:01 -----
+
+===== 東風戦ランキング超上級 566卓 開始 2002/03/03 19:04 =====
+  持点27000 [1]JOONNY99 R1998 [2]菌太郎 R2196 [3]autopapa R1864 [4]ジャオウ R1898
+  東1局 0本場(リーチ0) JOONNY99 7900 菌太郎 -2000 autopapa -3900 ジャオウ -2000 
+    30符 四飜ツモ リーチ 門前清模和 ドラ2 
+    [1西]2m1p4p6p7p9p3s6s7s8s東南西
+    [2北]4m4m6m7m3p1s4s8s9s東発発中
+    [3東]8m8m9m1p4p5p1s4s5s7s西北白
+    [4南]1m2m3m3m6m9m3p7p9p5s南白発
+    [表ドラ]8p [裏ドラ]7p
+    * 3G2s 3d北 4G東 4d9m 1G6p 1d1p 2G9m 2d1s 3G中 3d西 4G2p 4d南 1G9s 1d南
+    * 2G4m 2d中 3G発 3D発 2N 2d3p 3G3s 3d中 4G6s 4d発 1G3p 1d東 2G白 2d4s 3G1p
+    * 3d白 4G4s 4d白 1G西 1d9p 2G7p 2d白 3G2m 3D2m 4G8s 4D8s 1G2s 1d9s 2G7s
+    * 2d東 3G5s 3d7s 4G北 4d東 1G8p 1d2m 2G4p 2d7p 3G1m 3D1m 4G5p 4d北 1G1m
+    * 1d6p 2G9p 2D9p 3G中 3D中 4G7m 4d1m 1G2p 1R 1d1m 2G白 2D白 3G2p 3d1p 4G5m
+    * 4d2m 1G中 1D中 2G7m 2d9s 3G2m 3D2m 4G3s 4d9p 1G1s 1A
+
+  東2局 0本場(リーチ0) autopapa 2500 JOONNY99 -400 菌太郎 -400 ジャオウ -1700 
+    40符 一飜ツモ 場風 
+    [1南]1m8m1p1p5p6p9p6s6s7s9s南北
+    [2西]1m2m4m5m4p7p2s8s9s北白発中
+    [3北]2m6m8m9m2p3p3s3s8s東西白中
+    [4東]3m3m4m7m2p4p4p1s3s6s8s東南
+    [表ドラ]北 [裏ドラ]7p
+    * 4G4p 4d南 1G5p 1d1m 2G6s 2d9s 3G発 3d西 4G中 4D中 1G8p 1d南 2G1s 2d中
+    * 3G2s 3d中 4G5s 4d2p 1G東 1D東 2G9p 2d4p 3G東 3d発 4G発 4D発 1G白 1D白
+    * 2G4m 2d発 3G9s 3d白 4G7m 4d東 3N 3d2m 4G7s 4d3m 1G3p 1d9p 2G4s 2d白 3G5s
+    * 3d6m 4G7m 4d1s 1G南 1D南 2G7s 2d1s 3C2s3s 3d8m 4G9p 4D9p 1G8p 1d9s 2G7m
+    * 2d2m 3G8s 3d3p 4G2m 4R 4d3s 1G西 1D西 2G1p 2d1m 3G9m 3d2p 4G白 4D白 1G5s
+    * 1d1p 2G8p 2d1p 3G9m 3d9s 4G1m 4D1m 1G2p 1d1p 2G3m 2D3m 3G4s 3A
+
+  東3局 0本場(リーチ0) ジャオウ 8000 JOONNY99 -8000 
+    満貫ロン 平和 一盃口 リーチ 一発 ドラ1 
+    [1東]2m6m8m1p4p7p4s5s5s6s7s東南
+    [2南]1m5m4p4p8p1s3s4s6s6s9s9s北
+    [3西]4m5m6m9m9m1p6p1s2s東東西中
+    [4北]1m2m2m3m8m3p3p5p7p2s3s4s北
+    [表ドラ]8m白 [裏ドラ]発9p
+    * 1G6p 1d南 2G5m 2d1m 3G7s 3d西 4G1m 4d北 1G3p 1d1p 2G7p 2d1s 3G3m 3d中
+    * 4G発 4D発 1G5p 1d東 3N 3d1p 4G7m 4d7p 1G3s 1d2m 2G2s 2d北 3G6m 3d7s 4G6s
+    * 4d5p 1G9p 1D9p 2G5s 2d9s 3G1p 3D1p 4G5p 4D5p 1G発 1D発 2G2p 2d9s 3G東
+    * 3K東 3G5s 3D5s 4G西 4D西 1G8m 1d6m 3N 3d6p 4G3m 4R 4d6s 1G9m 1D9m 4A
+
+  東4局 0本場(リーチ0) 菌太郎 12000 ジャオウ -12000 
+    満貫ロン 一盃口 ドラ3 
+    [1北]1m1m2m6m6m5p1s2s4s4s7s8s中
+    [2東]1m2m9m2p5p9p3s3s5s5s6s南白
+    [3南]1m5m9m1p1p1p7p1s7s8s9s9s東
+    [4西]2m3m5m3p5p2s6s7s南南北白発
+    [表ドラ]5s [裏ドラ]4m
+    * 2G北 2d9p 3G1s 3d1m 4G6s 4d北 1G2p 1d中 2G8m 2d北 3G6s 3d東 4G発 4d2s
+    * 1G東 1D東 2G4p 2d南 4N 4d白 1G4m 1d5p 2G5p 2d白 3G北 3D北 4G西 4D西 1G5m
+    * 1d2p 2G6p 2d2p 3G8s 3d5m 4G7m 4D7m 1G西 1D西 2G7m 2d2m 3G9m 3d7p 4G3m
+    * 4d5m 1G8m 1d1s 2G9s 2d1m 3G2p 3D2p 4G3m 4d2m 1G発 1D発 4N 4d7s 1G6m 1d8m
+    * 2G4m 2D4m 3G3p 3D3p 4G西 4D西 1G8s 1d1m 2G中 2D中 3G北 3d6s 4N 4d5p 1G4p
+    * 1d1m 2G6p 2d9s 3G9p 3D9p 4G8m 4d3p 1G6p 1d2m 2G5m 2D5m 3G3p 3D3p 4G4s
+    * 4D4s 1G発 1D発 2G8p 2D8p 3G7p 3D7p 4G4m 4D4m 1G東 1d2s 2G1p 2D1p 3G3s
+    * 3d北 4G8p 4D8p 1G3p 1d東 2G6p 2D6p 3G7m 3D7m 4G5s 4d8m 1G白 1d6p 2G5s
+    * 2d6s 3G9m 3d3s 4G南 4D南 1G7p 1d白 2G9p 2D9p 3G1s 3d7s 4G4p 4D4p 2A
+
+  ---- 試合結果 ----
+  1位 菌太郎        +25
+  2位 JOONNY99      +1
+  3位 autopapa      -8
+  4位 ジャオウ      -18
+----- 566卓 終了 2002/03/03 19:15 -----
