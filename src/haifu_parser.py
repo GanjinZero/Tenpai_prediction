@@ -1,9 +1,11 @@
-from mahjong.tile import TilesConverter
+import numpy as np
+# from mahjong.tile import TilesConverter
 from tenpai import tenpai
-# man pin sou z1234567 东南西北白发中
+# man pin sou z1234567 東南西北白発中
+
 
 def change_tile_to_number(tile):
-    if len(tile) == 2:
+    if len(tile) > 1:
         number = int(tile[0])
         k = 0
         if tile[1] == "p":
@@ -13,6 +15,7 @@ def change_tile_to_number(tile):
         return k * 9 + number - 1
     z_list = "東南西北白発中"
     return z_list.find(tile) + 27
+
 
 def parse_start_hand(tiles):
     tiles_34 = [0] * 34
@@ -28,42 +31,119 @@ def parse_start_hand(tiles):
             i += 1
     return tiles_34
 
+
 def parse_haifu(haifu):
-    '''
-    Not finished
-    '''
     # haifu has 6 lines
+
     dora_position = haifu[4].find("[裏ドラ]")
-    dora_string = haifu[4][5:dora_position - 1]
-    #dora = TilesConverter.string_to_34_array(dora_string)
-    
+    dora = haifu[4][5: dora_position - 1]
+    i = 0
+    dora_list = []
+    while i < len(dora):
+        if '1' <= dora[i] <= '9':
+            now_tile = dora[i:i + 2]
+            dora_list.append(dora[i:i + 2])
+            i += 2
+        else:
+            now_tile = dora[i]
+            dora_list.append(dora[i])
+            i += 1
+
     richi_position = haifu[5].find("R")
     first_richi_player = int(haifu[5][richi_position - 1])
-    haifu[5] = haifu[5][0:richi_position + 1]
-    
+    haifu[5] = haifu[5][0:richi_position + 6]
+
+    chanfon = '東'
+    jikaze = haifu[first_richi_player - 1][2]
+
     # Generate input
     player_list = [1, 2, 3, 4]
+    input_list = []
     for player in player_list:
         if player != first_richi_player:
-            start_hand = parse_start_hand(haifu[player - 1])
-            
-    
-    # Generate output        
-    start_hand_richi = parse_start_hand(haifu[first_richi_player - 1])
+            start_hand = haifu[player - 1][4:]
+            start_hand_string = ""
+            i = 0
+            prefix = str(player) + "G"
+            while i < len(start_hand):
+                if '1' <= start_hand[i] <= '9':
+                    now_tile = start_hand[i:i + 2]
+                    start_hand_string += prefix + now_tile + " "
+                    i += 2
+                else:
+                    now_tile = start_hand[i]
+                    start_hand_string += prefix + now_tile + " "
+                    i += 1
+            input_list.append(start_hand_string + haifu[5])
+
+    # Generate output
+    start_hand_richi = parse_start_hand(haifu[first_richi_player - 1][4:])
     sute = [False] * 34
     for action in haifu[5].split(" "):
-        if action[0] == str(first_richi_player):
-            if action[1] == "G":
-                now_tile = action[2:]
-                start_hand_richi[change_tile_to_number(now_tile)] += 1
-            if action[1] == "D" or action[1] == "d":
-                now_tile = action[2:]
-                tile_number = change_tile_to_number(now_tile)
-                start_hand_richi[tile_number] -= 1
-                sute[tile_number] = True
+        if action != "":
+            if action[0] == str(first_richi_player):
+                if action[1] == "G":
+                    now_tile = action[2:]
+                    start_hand_richi[change_tile_to_number(now_tile)] += 1
+                if action[1] == "D" or action[1] == "d":
+                    now_tile = action[2:]
+                    tile_number = change_tile_to_number(now_tile)
+                    start_hand_richi[tile_number] -= 1
+                    sute[tile_number] = True
     tenpai_result = tenpai(start_hand_richi, sute)
-    
-    return None
+
+    return input_list, chanfon, jikaze, dora_list, tenpai_result
+
+
+def action_to_vector(action, chanfon, jikaze, dora_list):
+    # action like: 1G1m, 2N, 3R, 4d5p
+    vector = [0] * 52
+    vector[int(action[0]) - 1] = 1  # player number 0-3
+    ch = action[1]
+    if ch == 'G':
+        act = 0
+    if ch == 'd':
+        act = 1
+    if ch == 'D':
+        act = 2
+    if ch == 'N':
+        act = 3
+    if ch == 'C':
+        act = 4
+    if ch == 'K':
+        act = 5
+    if ch == 'R':
+        act = 6
+    vector[act + 4] = 1  # act 4-10
+
+    tile = action[2:]
+    if len(tile) != 0:
+
+        tile_num = change_tile_to_number(tile)
+        vector[tile_num + 11] = 1  # tile 11-45
+        if tile == chanfon:
+            vector[46] = 1  # chanfon 46
+        if tile == jikaze:
+            vector[47] = 1  # jikaze 47
+
+        dora_counter = 0
+        for dora in dora_list:
+            dora_counter += 1
+            if tile[0:2] == dora:
+                vector[47 + dora_counter] = 1  # uradora 48-51
+
+        if len(tile) == 4:  # Deal with Chi
+            tile_num_2 = change_tile_to_number(tile[2:])
+            vector[tile_num_2 + 11] = 1  # tile 11-45
+
+            dora_counter = 0
+            for dora in dora_list:
+                dora_counter += 1
+                if tile[2:] == dora:
+                    vector[47 + dora_counter] = 1  # uradora 48-51
+
+    return np.array(vector)
+
 
 def check_haifu(st):
     haifu_checker = ["[1東", "[1南", "[1西", "[1北"]
@@ -71,7 +151,8 @@ def check_haifu(st):
         if st.find(checker) != -1:
             return 1
     return -1
-    
+
+
 def load_data(file_name):
     # For haifu from 東風荘
     haifu_list = []
@@ -93,14 +174,21 @@ def load_data(file_name):
                     use_line += 1
                     star = lines[use_line].find("*")
                 haifu_now.append(sute.strip())
-                haifu_list.append(haifu_now)    
+                haifu_list.append(haifu_now)
 
     return haifu_list
 
-def richi_filter(haifu_list): 
-    return [haifu for haifu in haifu_list if haifu[5].find("R")!=-1]
+
+def richi_filter(haifu_list):
+    return [haifu for haifu in haifu_list if haifu[5].find("R") != -1]
+
 
 if __name__ == "__main__":
     test_list = load_data("../data/sample.txt")
-    #test_list = load_data("../data/totuhaihu.txt")
+    # test_list = load_data("../data/totuhaihu.txt")
     richi_data = richi_filter(test_list)
+    print(parse_haifu(richi_data[0]))
+    print(action_to_vector("1d1m", '東', '西', ['1m']))
+    print(action_to_vector("1d東", '東', '西', ['1m']))
+    print(action_to_vector("1C2s4s", '東', '西', ['2s']))
+    print(action_to_vector("1C2s3s", '東', '西', ['3s', '2s']))
