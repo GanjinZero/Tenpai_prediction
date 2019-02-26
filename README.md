@@ -1,5 +1,5 @@
-# Saku-mahjong
-A reinforcement learning Japanese mahjong AI. Saku is "咲く" in Japanese, it origins from comic "咲-Saki".
+# Tenpai_Prediction
+Predict Japanese Mahjong richi tenpai by neural network.
 
 # Data
 Data comes from:[haifu](http://totutohoku.b23.coreserver.jp/hp/HAIHU.htm)
