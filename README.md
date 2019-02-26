@@ -34,4 +34,10 @@ We can know that
 |     R     |       リーチ       |
 |     A     |       上がる       |
 
+# Requires
+[Mahjong](https://github.com/MahjongRepository/mahjong)
+```
+pip install mahjong
+```
+
 
