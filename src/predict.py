@@ -1,6 +1,7 @@
 from keras.models import load_model
 import numpy as np
 from generate_train_data import generate_train_data
+from haifu_parser import show_richi_player_sutehai, load_data, richi_filter
 
 
 model = load_model("../model/tenpai.model")
@@ -41,20 +42,25 @@ def predict_first_five(x):
 
 
 def print_y(y):
-    print([number_to_tile(num) for num in range(34) if y[num] == 1])
+    print("Richi player tenpai:",
+          [number_to_tile(num) for num in range(34) if y[num] == 1])
 
 
 def check_example(index):
-    print(predict_first_five(x_data[index]))
+    print("Predict tenpai:",
+          predict_first_five(x_data[index]))
     print_y(y_data[index])
 
 
+test_list = load_data("../data/sample.txt")
+richi_data = richi_filter(test_list)
+
+
+def check_example_with_sutehai(index):
+    print("Richi player sutehai:",
+          show_richi_player_sutehai(richi_data[index]))
+    check_example(3 * index)
+
+
 if __name__ == "__main__":
-    check_example(0)
-    check_example(3)
-    check_example(6)
-    check_example(9)
-    check_example(12)
-    check_example(15)
-    check_example(18)
-    check_example(21)
+    check_example_with_sutehai(1)

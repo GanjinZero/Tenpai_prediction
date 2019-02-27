@@ -95,6 +95,21 @@ def parse_haifu(haifu):
     return input_list, chanfon, jikaze, dora_list, tenpai_result
 
 
+def show_sutehai(haifu, player):
+    sutehai_list = []
+    for action in haifu[5].split(" "):
+        if action[0] == str(player) and (action[1] == "D" or action[1] == "d"):
+            now_tile = action[2:]
+            sutehai_list.append(now_tile)
+    return sutehai_list
+
+
+def show_richi_player_sutehai(haifu):
+    richi_position = haifu[5].find("R")
+    first_richi_player = int(haifu[5][richi_position - 1])
+    return show_sutehai(haifu, first_richi_player)
+
+
 def action_to_vector(action, player, chanfon, jikaze, dora_list):
     # action like: 1G1m, 2N, 3R, 4d5p
     vector = [0] * 52
@@ -187,10 +202,18 @@ if __name__ == "__main__":
     test_list = load_data("../data/sample.txt")
     # test_list = load_data("../data/totuhaihu.txt")
     richi_data = richi_filter(test_list)
+
+    # Test parse_haifu
     print(parse_haifu(richi_data[0]))
+
+    # Test action_to_vector
     print(action_to_vector("1d1m", 1, '東', '西', ['1m']))
     print(action_to_vector("1d東", 1, '東', '西', ['1m']))
     print(action_to_vector("1G1m", 1, '東', '西', ['1m']))
     print(action_to_vector("2G1m", 1, '東', '西', ['1m']))
     print(action_to_vector("1C2s4s", 2, '東', '西', ['2s']))
     print(action_to_vector("1C2s3s", 2, '東', '西', ['3s', '2s']))
+
+    # Test show_sutehai and show_richi_player_sutehai
+    print(show_sutehai(richi_data[1], 1))
+    print(show_richi_player_sutehai(richi_data[1]))
