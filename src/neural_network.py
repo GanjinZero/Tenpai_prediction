@@ -38,8 +38,8 @@ if __name__ == "__main__":
                   metrics=['categorical_crossentropy'])
     print(model.summary())
 
-    epoch_nb = 300
-    batch = 128
+    epoch_nb = 80
+    batch = 64
 
     model.fit(x_train, y_train, batch_size=batch, epochs=epoch_nb,
               verbose=1, validation_data=(x_test, y_test))
