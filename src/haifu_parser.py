@@ -95,7 +95,7 @@ def parse_haifu(haifu):
     return input_list, chanfon, jikaze, dora_list, tenpai_result
 
 
-def action_to_vector(action, chanfon, jikaze, dora_list):
+def action_to_vector(action, player, chanfon, jikaze, dora_list):
     # action like: 1G1m, 2N, 3R, 4d5p
     vector = [0] * 52
     vector[int(action[0]) - 1] = 1  # player number 0-3
@@ -117,7 +117,7 @@ def action_to_vector(action, chanfon, jikaze, dora_list):
     vector[act + 4] = 1  # act 4-10
 
     tile = action[2:]
-    if len(tile) != 0:
+    if len(tile) != 0 and not (ch == 'G' and str(player) != action[0]):
 
         tile_num = change_tile_to_number(tile)
         vector[tile_num + 11] = 1  # tile 11-45
@@ -188,7 +188,9 @@ if __name__ == "__main__":
     # test_list = load_data("../data/totuhaihu.txt")
     richi_data = richi_filter(test_list)
     print(parse_haifu(richi_data[0]))
-    print(action_to_vector("1d1m", '東', '西', ['1m']))
-    print(action_to_vector("1d東", '東', '西', ['1m']))
-    print(action_to_vector("1C2s4s", '東', '西', ['2s']))
-    print(action_to_vector("1C2s3s", '東', '西', ['3s', '2s']))
+    print(action_to_vector("1d1m", 1, '東', '西', ['1m']))
+    print(action_to_vector("1d東", 1, '東', '西', ['1m']))
+    print(action_to_vector("1G1m", 1, '東', '西', ['1m']))
+    print(action_to_vector("2G1m", 1, '東', '西', ['1m']))
+    print(action_to_vector("1C2s4s", 2, '東', '西', ['2s']))
+    print(action_to_vector("1C2s3s", 2, '東', '西', ['3s', '2s']))

@@ -1,4 +1,4 @@
-from generate_train_data import generate_train_test
+from generate_train_data import generate_train_test_local
 from keras.layers import Input, CuDNNLSTM, Dropout
 from keras.layers import Dense
 from keras.models import Model
@@ -6,13 +6,20 @@ from keras.optimizers import Adam
 
 
 if __name__ == "__main__":
-    x_train, x_test, y_train, y_test = generate_train_test()
+    # x_train, x_test, y_train, y_test = generate_train_test()
+    x_train, x_test, y_train, y_test = generate_train_test_local()
 
     # Model
     inp = Input(shape=(x_train[0].shape[0], 52))
-    x = CuDNNLSTM(128, return_sequences=True)(inp)
+    x = CuDNNLSTM(256, return_sequences=True)(inp)
     x = Dropout(0.1)(x)
-    x = CuDNNLSTM(128, return_sequences=False)(x)
+    """
+    x = CuDNNLSTM(256, return_sequences=True)(x)
+    x = Dropout(0.1)(x)
+    x = CuDNNLSTM(256, return_sequences=True)(x)
+    x = Dropout(0.1)(x)
+    """
+    x = CuDNNLSTM(256, return_sequences=False)(x)
     x = Dropout(0.1)(x)
     x = Dense(128, activation="relu")(x)
     x = Dropout(0.1)(x)
@@ -31,7 +38,7 @@ if __name__ == "__main__":
                   metrics=['categorical_crossentropy'])
     print(model.summary())
 
-    epoch_nb = 60
+    epoch_nb = 300
     batch = 128
 
     model.fit(x_train, y_train, batch_size=batch, epochs=epoch_nb,

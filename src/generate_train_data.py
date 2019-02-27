@@ -24,9 +24,10 @@ def generate_train_data(file_name):
         inp, chanfon, jikaze, dora_list, tenpai_result = parse_haifu(haifu)
         for each_inp in inp:
             x = []
+            player = each_inp[0]
             for action in each_inp.split(" "):
                 if action != "":
-                    x.append(action_to_vector(action, chanfon,
+                    x.append(action_to_vector(action, player, chanfon,
                                               jikaze, dora_list))
             x_data.append(np.array(x))
             y_data.append(tenpai_result)
@@ -69,5 +70,20 @@ def generate_train_test():
     return x_train, x_test, y_train, y_test
 
 
+def save_train_data():
+    x_data, y_data = generate_train_data("totuhaihu")
+    x_data = pad_x(x_data)
+    np.save("../model/x_data.npy", x_data)
+    np.save("../model/y_data.npy", y_data)
+    print("Train data generate and save on ../model/")
+
+
+def generate_train_test_local():
+    x_data = np.load("../model/x_data.npy")
+    y_data = np.load("../model/y_data.npy")
+    x_train, x_test, y_train, y_test = split(x_data, y_data)
+    return x_train, x_test, y_train, y_test
+
+
 if __name__ == "__main__":
-    x_train, x_test, y_train, y_test = generate_train_test()
+    save_train_data()
