@@ -47,3 +47,14 @@ def print_y(y):
 def check_example(index):
     print(predict_first_five(x_data[index]))
     print_y(y_data[index])
+
+
+if __name__ == "__main__":
+    check_example(0)
+    check_example(3)
+    check_example(6)
+    check_example(9)
+    check_example(12)
+    check_example(15)
+    check_example(18)
+    check_example(21)
