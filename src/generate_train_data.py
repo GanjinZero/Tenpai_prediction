@@ -21,7 +21,7 @@ def generate_train_data(file_name):
 
     richi_data = richi_filter(test_list)
     for haifu in richi_data:
-        inp, chanfon, jikaze, dora_list, tenpai_result = parse_haifu(haifu)
+        inp, chanfon, jikaze, dora_list, tenpai_result, sute = parse_haifu(haifu)
         for each_inp in inp:
             x = []
             player = each_inp[0]

@@ -29,5 +29,6 @@ if __name__ == "__main__":
     """
     
     sute = [False] * 34
+    sute[1] = True
     tiles = [3, 1, 1, 1, 1, 1, 1, 1, 3] + [0] * 25
     print(tenpai(tiles, sute))

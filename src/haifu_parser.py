@@ -1,8 +1,8 @@
 import numpy as np
-# from mahjong.tile import TilesConverter
 from tenpai import tenpai
-# man pin sou z1234567 東南西北白発中
 
+
+# man pin sou z1234567 東南西北白発中
 
 def change_tile_to_number(tile):
     if len(tile) > 1:
@@ -92,7 +92,7 @@ def parse_haifu(haifu):
                     sute[tile_number] = True
     tenpai_result = tenpai(start_hand_richi, sute)
 
-    return input_list, chanfon, jikaze, dora_list, tenpai_result
+    return input_list, chanfon, jikaze, dora_list, tenpai_result, sute
 
 
 def show_sutehai(haifu, player):
@@ -215,5 +215,5 @@ if __name__ == "__main__":
     print(action_to_vector("1C2s3s", 2, '東', '西', ['3s', '2s']))
 
     # Test show_sutehai and show_richi_player_sutehai
-    print(show_sutehai(richi_data[1], 1))
-    print(show_richi_player_sutehai(richi_data[1]))
+    print(show_sutehai(richi_data[0], 1))
+    print(show_richi_player_sutehai(richi_data[0]))
