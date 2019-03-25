@@ -1,6 +1,4 @@
 .vscode/
-data/kintaro.txt
-data/totuhaihu.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
