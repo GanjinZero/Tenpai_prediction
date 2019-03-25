@@ -3,6 +3,7 @@ from keras.layers import Input, CuDNNLSTM, Dropout
 from keras.layers import Dense
 from keras.models import Model
 from keras.optimizers import Adam
+from keras.utils import multi_gpu_model
 
 
 if __name__ == "__main__":
@@ -28,20 +29,23 @@ if __name__ == "__main__":
     output = Dense(34, activation="softmax")(x)
 
     model = Model(inputs=inp, outputs=output)
+
+    par_model = multi_gpu_model(model, gpus=2)
+
     opt = Adam(lr=0.001, beta_1=0.9, beta_2=0.999,
                epsilon=None, decay=0.0, amsgrad=False)
 
     # Which kind of loss to use?
     # We should write another metrics
-    model.compile(loss='categorical_crossentropy',
-                  optimizer=opt,
-                  metrics=['categorical_crossentropy'])
+    par_model.compile(loss='categorical_crossentropy',
+                      optimizer=opt,
+                      metrics=['categorical_crossentropy'])
     print(model.summary())
 
-    epoch_nb = 80
+    epoch_nb = 120
     batch = 64
 
-    model.fit(x_train, y_train, batch_size=batch, epochs=epoch_nb,
-              verbose=1, validation_data=(x_test, y_test))
+    par_model.fit(x_train, y_train, batch_size=batch, epochs=epoch_nb,
+                  verbose=1, validation_data=(x_test, y_test))
 
     model.save("../model/tenpai.model")

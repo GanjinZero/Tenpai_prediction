@@ -2,12 +2,14 @@ from keras.models import load_model
 import numpy as np
 from generate_train_data import generate_train_data
 from haifu_parser import show_richi_player_sutehai, load_data, richi_filter
+from haifu_parser import show_richi_player_sutehai_list
 
 
 model = load_model("../model/tenpai.model")
 x_data, y_data = generate_train_data('sample')
 
 pad_dim = int(model.input.shape[1])
+# pad_dim = 156
 
 
 def pad_sample(x, pad_dim):
@@ -38,7 +40,10 @@ def predict_first_five(x):
     prob = predict(x)
     order = prob.argsort()[-5:].tolist()
     order.reverse()
-    return [number_to_tile(num) for num in order]
+    result = dict()
+    for num in order:
+        result[number_to_tile(num)] = round(prob[num], 2)
+    return result
 
 
 def print_y(y):
@@ -64,3 +69,10 @@ def check_example_with_sutehai(index):
 
 if __name__ == "__main__":
     check_example_with_sutehai(1)
+    check_example_with_sutehai(2)
+    check_example_with_sutehai(3)
+    check_example_with_sutehai(4)
+    check_example_with_sutehai(5)
+    check_example_with_sutehai(6)
+    check_example_with_sutehai(7)
+

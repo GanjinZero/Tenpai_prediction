@@ -1,0 +1,11 @@
+  東1局 0本場(リーチ0) YZKTR 3000 松戸の俊 -1500 菌太郎 -1000 シャモア -500 
+    30符 二飜ツモ リーチ 門前清模和 
+    [1北]1m2m7m8m9m2p4p6p3s4s7s8s9s
+    [2東]1m3m6m9m8p4s8s東南西白白発
+    [3南]2m2m2p7p8p1s2s5s8s9s西発中
+    [4西]6m7m4p5p6p7p8p9p9p2s2s6s東
+    [表ドラ]2p [裏ドラ]9m
+    * 2G9m 2d西 3G1s 3d西 4G5p 4d東 1G5s 1d1m 2G発 2d東 3G1m 3D1m 4G2s 4d6s
+    * 1G5s 1d2m 2C1m3m 2d4s 3G3s 3d1s 4G9s 4D9s 1G9m 1D9m 2N 2d8s 3G北 3D北
+    * 4G9p 4R 4d5p 1G3p 1R 1d6p 2G5s 2d発 3G1p 3d発 4G白 4D白 1G4m 1D4m 2G南
+    * 2d発 3G6m 3d9s 4G8m 4A

@@ -64,14 +64,24 @@ def split(x_data, y_data):
 
 
 def generate_train_test():
-    x_data, y_data = generate_train_data("totuhaihu")
+    x_data_0, y_data_0 = generate_train_data("totuhaihu")
+    x_data_1, y_data_1 = generate_train_data("kintaro")
+    print(x_data_0.shape)
+    print(x_data_1.shape)
+    x_data = np.concatenate((x_data_0, x_data_1), axis=0)
+    y_data = np.concatenate((y_data_0, y_data_1), axis=0)
     x_data = pad_x(x_data)
     x_train, x_test, y_train, y_test = split(x_data, y_data)
     return x_train, x_test, y_train, y_test
 
 
 def save_train_data():
-    x_data, y_data = generate_train_data("totuhaihu")
+    x_data_0, y_data_0 = generate_train_data("totuhaihu")
+    x_data_1, y_data_1 = generate_train_data("kintaro")
+    print(x_data_0.shape)
+    print(x_data_1.shape)
+    x_data = np.concatenate((x_data_0, x_data_1), axis=0)
+    y_data = np.concatenate((y_data_0, y_data_1), axis=0)
     x_data = pad_x(x_data)
     np.save("../model/x_data.npy", x_data)
     np.save("../model/y_data.npy", y_data)

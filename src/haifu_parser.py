@@ -33,8 +33,7 @@ def parse_start_hand(tiles):
 
 
 def parse_haifu(haifu):
-    # haifu has 6 lines
-
+    # haifu has 7 lines
     dora_position = haifu[4].find("[裏ドラ]")
     dora = haifu[4][5: dora_position - 1]
     i = 0
@@ -53,7 +52,9 @@ def parse_haifu(haifu):
     first_richi_player = int(haifu[5][richi_position - 1])
     haifu[5] = haifu[5][0:richi_position + 6]
 
-    chanfon = '東'
+    # chanfon = '東'
+    chanfon = haifu[6].strip()[0]
+
     jikaze = haifu[first_richi_player - 1][2]
 
     # Generate input
@@ -110,6 +111,20 @@ def show_richi_player_sutehai(haifu):
     return show_sutehai(haifu, first_richi_player)
 
 
+def show_sutehai_list(haifu, player):
+    sutehai_tiles = show_sutehai(haifu, player)
+    sutehai_list = [False] * 34
+    for sutehai in sutehai_list:
+        sutehai_list[change_tile_to_number(sutehai)] = True
+    return sutehai_list
+
+
+def show_richi_player_sutehai_list(haifu): 
+    richi_position = haifu[5].find("R")
+    first_richi_player = int(haifu[5][richi_position - 1])
+    return show_sutehai_list(haifu, first_richi_player)
+
+
 def action_to_vector(action, player, chanfon, jikaze, dora_list):
     # action like: 1G1m, 2N, 3R, 4d5p
     vector = [0] * 52
@@ -144,7 +159,7 @@ def action_to_vector(action, player, chanfon, jikaze, dora_list):
         dora_counter = 0
         for dora in dora_list:
             dora_counter += 1
-            if tile[0:2] == dora:
+            if tile[0:2] == dora and dora_counter <= 4:
                 vector[47 + dora_counter] = 1  # uradora 48-51
 
         if len(tile) == 4:  # Deal with Chi
@@ -154,7 +169,7 @@ def action_to_vector(action, player, chanfon, jikaze, dora_list):
             dora_counter = 0
             for dora in dora_list:
                 dora_counter += 1
-                if tile[2:] == dora:
+                if tile[2:] == dora and dora_counter <= 4:
                     vector[47 + dora_counter] = 1  # uradora 48-51
 
     return np.array(vector)
@@ -181,6 +196,7 @@ def load_data(file_name):
                 use_line += 1
             else:
                 haifu_now = lines[use_line: use_line + 5]
+                chanfon_richi_honba = lines[use_line - 2]
                 use_line = use_line + 5
                 sute = ""
                 star = lines[use_line].find("*")
@@ -189,6 +205,7 @@ def load_data(file_name):
                     use_line += 1
                     star = lines[use_line].find("*")
                 haifu_now.append(sute.strip())
+                haifu_now.append(chanfon_richi_honba) # Get Chanfon, richi, honba 
                 haifu_list.append(haifu_now)
 
     return haifu_list
