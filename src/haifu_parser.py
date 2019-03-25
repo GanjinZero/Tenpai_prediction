@@ -114,12 +114,12 @@ def show_richi_player_sutehai(haifu):
 def show_sutehai_list(haifu, player):
     sutehai_tiles = show_sutehai(haifu, player)
     sutehai_list = [False] * 34
-    for sutehai in sutehai_list:
+    for sutehai in sutehai_tiles:
         sutehai_list[change_tile_to_number(sutehai)] = True
     return sutehai_list
 
 
-def show_richi_player_sutehai_list(haifu): 
+def show_richi_player_sutehai_list(haifu):
     richi_position = haifu[5].find("R")
     first_richi_player = int(haifu[5][richi_position - 1])
     return show_sutehai_list(haifu, first_richi_player)
@@ -205,7 +205,8 @@ def load_data(file_name):
                     use_line += 1
                     star = lines[use_line].find("*")
                 haifu_now.append(sute.strip())
-                haifu_now.append(chanfon_richi_honba) # Get Chanfon, richi, honba 
+                haifu_now.append(chanfon_richi_honba)
+                # Get Chanfon, richi, honba
                 haifu_list.append(haifu_now)
 
     return haifu_list

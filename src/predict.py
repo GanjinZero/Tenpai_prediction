@@ -6,10 +6,9 @@ from haifu_parser import show_richi_player_sutehai_list
 
 
 model = load_model("../model/tenpai.model")
-x_data, y_data = generate_train_data('sample')
+x_data, y_data = generate_train_data('test')
 
 pad_dim = int(model.input.shape[1])
-# pad_dim = 156
 
 
 def pad_sample(x, pad_dim):
@@ -57,22 +56,27 @@ def check_example(index):
     print_y(y_data[index])
 
 
-test_list = load_data("../data/sample.txt")
+# test_list = load_data("../data/sample.txt")
+test_list = load_data("../data/test.txt")
 richi_data = richi_filter(test_list)
 
 
 def check_example_with_sutehai(index):
     print("Richi player sutehai:",
           show_richi_player_sutehai(richi_data[index]))
+    check_example(3 * index - 2)
+    check_example(3 * index - 1)
     check_example(3 * index)
 
 
 if __name__ == "__main__":
-    check_example_with_sutehai(1)
+    check_example_with_sutehai(0)
+    """
     check_example_with_sutehai(2)
     check_example_with_sutehai(3)
     check_example_with_sutehai(4)
     check_example_with_sutehai(5)
     check_example_with_sutehai(6)
     check_example_with_sutehai(7)
+    """
 

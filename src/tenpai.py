@@ -1,6 +1,7 @@
 from mahjong.shanten import Shanten
 from mahjong.tile import TilesConverter
 
+
 def tenpai(tiles, sute):
     shanten = Shanten()
     if len(tiles) == 34:
@@ -9,7 +10,7 @@ def tenpai(tiles, sute):
     else:
         # man='1112345678999', pin='', sou='', honors=''
         tiles_34 = TilesConverter.string_to_34_array(tiles)
-        
+
     result = [0] * 34
     for i in range(34):
         if tiles_34[i] < 4 and not sute[i]:
@@ -18,7 +19,7 @@ def tenpai(tiles, sute):
                 result[i] = 1
             tiles_34[i] -= 1
     return result
-    
+
 
 if __name__ == "__main__":
     """
@@ -27,7 +28,7 @@ if __name__ == "__main__":
     result = shanten.calculate_shanten(tiles)
     print(result)
     """
-    
+
     sute = [False] * 34
     sute[1] = True
     tiles = [3, 1, 1, 1, 1, 1, 1, 1, 3] + [0] * 25
