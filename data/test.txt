@@ -10,3 +10,43 @@
     * 3G3s 3G3s 4G7p 4d9p 4R 1G3s 1d9p
 
 
+  東3局 
+    123 
+    [1西]
+    [2北]1m5m6m7m4p6p1s5s7s東白白中
+    [3東]
+    [4南]
+    [表ドラ]西 [裏ドラ]
+    * 3G9s 3D9s 4G中 4d9m 1G8m 1d北 2G4m 2d1s 3G6p 3D6p 4G1p 4d1m
+    * 1G6s 1d南 2G2s 2d1m 3G6s 3D6s 4G2s 4D2s 1C3s4s 1d8m 2C6m7m 2d2s
+    * 3G3s 3G3s 4G7p 4d9p 4R 1G3s 1d9p
+
+  東3局 
+    123 
+    [1西]
+    [2北]1m5m6m7m4p6p1s5s7s東白白中
+    [3東]
+    [4南]
+    [表ドラ]西 [裏ドラ]
+    * 3G9s 3D9s 4G中 4d9m 1G8m 1d北 2G4m 2d1s 3G6p 3D6p 4G1p 4d1m
+    * 1G6s 1d南 2G2s 2d1m 3G6s 3D6s 4G2s 4D2s 1C3s4s 1d8m 2C6m7m 2d2s
+
+  東3局 
+    123 
+    [1西]
+    [2北]1m5m6m7m4p6p1s5s7s東白白中
+    [3東]
+    [4南]
+    [表ドラ]西 [裏ドラ]
+    * 3G9s 3D9s 4G中 4d9m 1G8m 1d北 2G4m 2d1s 3G6p 3D6p 4G1p 4d1m
+    * 1G6s 1d南 2G2s 2d1m 3G6s 3D6s 4G2s 4D2s 1C3s4s 1d8m 2C6m7m 2d2s
+
+  東3局 
+    123 
+    [1西]
+    [2北]1m5m6m7m4p6p1s5s7s東白白中
+    [3東]
+    [4南]
+    [表ドラ]西 [裏ドラ]
+    * 3G9s 3D9s 4G中 4d9m 1G8m 1d北 2G4m 2d1s 3G6p 3D6p 4G1p 4d1m
+    * 1G6s 1d南 2G2s 2d1m 3G6s 3D6s 4G2s 4D2s 1C3s4s 1d8m 2C6m7m 2d2s

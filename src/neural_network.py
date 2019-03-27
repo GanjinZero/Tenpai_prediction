@@ -42,7 +42,7 @@ if __name__ == "__main__":
                       metrics=['categorical_crossentropy'])
     print(model.summary())
 
-    epoch_nb = 120
+    epoch_nb = 60
     batch = 64
 
     par_model.fit(x_train, y_train, batch_size=batch, epochs=epoch_nb,

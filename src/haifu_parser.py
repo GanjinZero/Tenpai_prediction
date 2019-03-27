@@ -61,7 +61,7 @@ def parse_haifu(haifu):
     player_list = [1, 2, 3, 4]
     input_list = []
     for player in player_list:
-        if player != first_richi_player:
+        if player != first_richi_player and len(haifu[player - 1]) > 4 :
             start_hand = haifu[player - 1][4:]
             start_hand_string = ""
             i = 0
@@ -220,7 +220,7 @@ if __name__ == "__main__":
     test_list = load_data("../data/sample.txt")
     # test_list = load_data("../data/totuhaihu.txt")
     richi_data = richi_filter(test_list)
-
+    print(richi_data[0])
     # Test parse_haifu
     print(parse_haifu(richi_data[0]))
 

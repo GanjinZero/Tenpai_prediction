@@ -1,12 +1,10 @@
 from keras.models import load_model
 import numpy as np
-from generate_train_data import generate_train_data
-from haifu_parser import show_richi_player_sutehai, load_data, richi_filter
-from haifu_parser import show_richi_player_sutehai_list
+from generate_train_data import generate_test_data
 
 
 model = load_model("../model/tenpai.model")
-x_data, y_data = generate_train_data('test')
+x_data, y_data, assistant_data = generate_test_data('test')
 
 pad_dim = int(model.input.shape[1])
 
@@ -16,8 +14,11 @@ def pad_sample(x, pad_dim):
     return np.concatenate((zeros, x), axis=0).reshape(1, pad_dim, 52)
 
 
-def predict(x):
+def predict(x, sute):
     p = model.predict(pad_sample(x, pad_dim))[0]
+    for i in range(len(sute)):
+        if sute[i]:
+            p[i] = 0
     return p / sum(p)
 
 
@@ -35,48 +36,31 @@ def number_to_tile(num):
     return z_list[num - 27]
 
 
-def predict_first_five(x):
-    prob = predict(x)
-    order = prob.argsort()[-5:].tolist()
-    order.reverse()
-    result = dict()
-    for num in order:
-        result[number_to_tile(num)] = round(prob[num], 2)
-    return result
-
-
-def print_y(y):
+def print_tenpai(y):
     print("Richi player tenpai:",
           [number_to_tile(num) for num in range(34) if y[num] == 1])
 
 
-def check_example(index):
-    print("Predict tenpai:",
-          predict_first_five(x_data[index]))
-    print_y(y_data[index])
+def predict_with_assistant(x, y, assist):
+    player, sute = assist
+    result = dict()
+    threshold = 0.01
+
+    prob = predict(x, sute)
+    print_tenpai(y)
+    print("Player " + str(player) + ": ")
+    for i in range(len(prob)):
+        if prob[i] > threshold:
+            result[number_to_tile(i)] = prob[i]
+    print(result)
 
 
-# test_list = load_data("../data/sample.txt")
-test_list = load_data("../data/test.txt")
-richi_data = richi_filter(test_list)
-
-
-def check_example_with_sutehai(index):
-    print("Richi player sutehai:",
-          show_richi_player_sutehai(richi_data[index]))
-    check_example(3 * index - 2)
-    check_example(3 * index - 1)
-    check_example(3 * index)
+def predict_by_order(i):
+    predict_with_assistant(x_data[i], y_data[i], assistant_data[i])
 
 
 if __name__ == "__main__":
-    check_example_with_sutehai(0)
-    """
-    check_example_with_sutehai(2)
-    check_example_with_sutehai(3)
-    check_example_with_sutehai(4)
-    check_example_with_sutehai(5)
-    check_example_with_sutehai(6)
-    check_example_with_sutehai(7)
-    """
+    cnt = x_data.shape[0]
+    for i in range(cnt):
+        predict_by_order(i)
 
