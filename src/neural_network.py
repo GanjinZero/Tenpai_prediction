@@ -1,9 +1,19 @@
 from generate_train_data import generate_train_test_local
+from keras.callbacks import Callback
 from keras.layers import Input, CuDNNLSTM, Dropout
 from keras.layers import Dense
 from keras.models import Model
 from keras.optimizers import Adam
 from keras.utils import multi_gpu_model
+from LossHistory import LossHistory
+
+
+class MyCbk(Callback):
+    def __init__(self, model):
+        self.model_to_save = model
+
+    def on_epoch_end(self, epoch, logs=None):
+        self.model_to_save.save('../model/tenpai_epoch_%d.model' % epoch)
 
 
 if __name__ == "__main__":
@@ -42,10 +52,14 @@ if __name__ == "__main__":
                       metrics=['categorical_crossentropy'])
     print(model.summary())
 
-    epoch_nb = 60
-    batch = 64
+    epoch_nb = 70
+    batch = 256
+
+    cbk = MyCbk(model)
+    history = LossHistory()
 
     par_model.fit(x_train, y_train, batch_size=batch, epochs=epoch_nb,
-                  verbose=1, validation_data=(x_test, y_test))
+                  verbose=1, validation_data=(x_test, y_test), callbacks=[cbk, history])
+    history.loss_plot()
 
     model.save("../model/tenpai.model")

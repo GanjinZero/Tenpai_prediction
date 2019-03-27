@@ -11,7 +11,7 @@ from haifu_parser import action_to_vector
 
 def generate_train_data(file_name):
     # 600 haifus/1s
-
+    print("Hiafu name:" + file_name)
     time_start = time.time()
     x_data = []
     y_data = []
@@ -23,7 +23,8 @@ def generate_train_data(file_name):
 
     richi_data = richi_filter(test_list)
 
-    fake_haifu_number = 5 # Too big will cause Out of Memory
+    print("Generate fake haifu:")
+    fake_haifu_number = 7 # Too big will cause Out of Memory
     # fake_haifu_number = 0
     new_richi_data = []
     for haifu in richi_data:
@@ -31,8 +32,9 @@ def generate_train_data(file_name):
         new_richi_data += generate_fake_haifu(haifu, fake_haifu_number)
         if len(new_richi_data) % 1000 == 0:
             print(len(new_richi_data), round(time.time() - time_start, 2))
-    print(len(new_richi_data))    
+    print(len(new_richi_data), round(time.time() - time_start, 2))    
 
+    print("Embed to vectors:")
     for haifu in new_richi_data:
         inp, chanfon, jikaze, dora_list, tenpai_result, sute = parse_haifu(haifu)
         for each_inp in inp:
@@ -40,8 +42,8 @@ def generate_train_data(file_name):
             player = each_inp[0]
             for action in each_inp.split(" "):
                 if action != "":
-                    x.append(action_to_vector(action, player, chanfon,
-                                              jikaze, dora_list))
+                    if not (player != action[0] and action[1] == "G"):
+                        x.append(action_to_vector(action, player, chanfon, jikaze, dora_list))
             x_data.append(np.array(x))
             y_data.append(tenpai_result)
             if len(y_data) % 2000 == 0:
@@ -73,8 +75,8 @@ def generate_test_data(file_name):
             player = each_inp[0]
             for action in each_inp.split(" "):
                 if action != "":
-                    x.append(action_to_vector(action, player, chanfon,
-                                              jikaze, dora_list))
+                    if not(player != action[0] and action[1] == "G"):
+                        x.append(action_to_vector(action, player, chanfon, jikaze, dora_list))
             x_data.append(np.array(x))
             y_data.append(tenpai_result)
             assistant_data.append([player, sute])
@@ -118,6 +120,7 @@ def generate_train_test():
     x_data = np.concatenate((x_data_0, x_data_1, x_data_2, x_data_3, x_data_4), axis=0)
     y_data = np.concatenate((y_data_0, y_data_1, y_data_2, y_data_3, y_data_4), axis=0)
     x_data = pad_x(x_data)
+    print(x_data.shape)
     x_train, x_test, y_train, y_test = shuffle_split(x_data, y_data)
     return x_train, x_test, y_train, y_test
 
@@ -137,6 +140,7 @@ def save_train_data():
     x_data = np.concatenate((x_data_0, x_data_1, x_data_2, x_data_3, x_data_4), axis=0)
     y_data = np.concatenate((y_data_0, y_data_1, y_data_2, y_data_3, y_data_4), axis=0)
     x_data = pad_x(x_data)
+    print(x_data.shape)
     # np.save("../model/x_data.npy", x_data)
     # np.save("../model/y_data.npy", y_data)
     np.save(local_place + "x_data.npy", x_data)
