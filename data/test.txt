@@ -26,19 +26,3 @@
     * 3D南 4G1p 4d2m 1d9s 2G西 2d8s 3d中 4G8m 4d3s 1d9m 2G6m 2d西
     * 3D1m 4G7s 4d1p 4R
 
-      東3局 2本場(リーチ3) kouji2001 51600 雨柳堂☆柚月 -48600 
-    役満ロン 国士無双 
-    [1西]9m7p7p8p1s3s4s4s5s6s7s発発
-    [2東]1m9m1p5P5p8p3s3s8s南西発中
-    [3南]1m3p5p6p1s4s5S5s7s7s8s西白
-    [表ドラ]白 [裏ドラ]1p
-    * 2G西 2d8p 3G8p 3d1m 1G8s 1d9m 2G東 2d8s 3G1m 3D1m 1G中 1d7p 2G7s 2d3s
-    * 3G北 3d西 1G2s 1d7p 2G東 2d5P 3G北 3d8p 1G3s 1d8p 2G白 2d5p 3G4p 3d白
-    * 1G白 1D白 2G4s 2d3s 3G発 3d1s 1G9p 1D9p 2G9s 2d7s 3G8p 3d発 1G3p 1D3p
-    * 2G北 2d4s 3G1m 3D1m 1G1p 1D1p 2G1s 2d西 3G2p 3d8p 1G4p 1D4p 2G1p 2D1p
-    * 3G3p 3D3p 1G9m 1D9m 2G5s 2D5s 3G9s 3d北 1G南 1D南 2G7p 2D7p 3G1s 3d北
-    * 1G2p 1D2p 2G白 2D白 3G3p 3d1s 1G6p 1D6p 2G8s 2D8s 3G4p 3d3p 1G中 1d4s
-    * 2G4p 2D4p 3G9m 3D9m 1G2p 1D2p 2G6s 2D6s 3G北 3D北 1G5p 1D5p 2G南 2D南
-    * 3G6p 3D6p 1G1p 1D1p 2G7p 2D7p 3G9p 3D9p 2A
-
-    
