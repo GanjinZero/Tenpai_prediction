@@ -125,7 +125,7 @@ def generate_train_test():
     return x_train, x_test, y_train, y_test
 
 
-local_place = "/media/veritas/95af80a9-ce6b-4f40-8cb3-9bfe602478f1/veritas/GanjinZero/haifu/"
+local_place = "/media/sda3/veritas/GanjinZero/haifu/"
 def save_train_data():
     x_data_0, y_data_0 = generate_train_data("totuhaihu")
     x_data_1, y_data_1 = generate_train_data("kintaro")

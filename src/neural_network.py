@@ -5,7 +5,9 @@ from keras.layers import Dense
 from keras.models import Model
 from keras.optimizers import Adam
 from keras.utils import multi_gpu_model
+from keras import backend as K
 from LossHistory import LossHistory
+from pyserverchan import pyserver
 
 
 class MyCbk(Callback):
@@ -15,10 +17,17 @@ class MyCbk(Callback):
     def on_epoch_end(self, epoch, logs=None):
         self.model_to_save.save('../model/tenpai_epoch_%d.model' % epoch)
 
+def acc(y_true, y_pred):
+    y_true = K.l2_normalize(y_true, axis=-1)
+    y_pred = K.l2_normalize(y_pred, axis=-1)
+    return K.sum(y_true * y_pred, axis=-1)
+
 
 if __name__ == "__main__":
     # x_train, x_test, y_train, y_test = generate_train_test()
     x_train, x_test, y_train, y_test = generate_train_test_local()
+    print(x_train.shape)
+    print(y_train.shape)
 
     # Model
     inp = Input(shape=(x_train[0].shape[0], 52))
@@ -47,13 +56,14 @@ if __name__ == "__main__":
 
     # Which kind of loss to use?
     # We should write another metrics
-    par_model.compile(loss='categorical_crossentropy',
+    par_model.compile(#loss='cosine_proximity',
+                      loss='categorical_crossentropy',
                       optimizer=opt,
-                      metrics=['categorical_crossentropy'])
+                      metrics=['categorical_crossentropy', acc])
     print(model.summary())
 
     epoch_nb = 70
-    batch = 256
+    batch = 512
 
     cbk = MyCbk(model)
     history = LossHistory()
@@ -63,3 +73,6 @@ if __name__ == "__main__":
     history.loss_plot()
 
     model.save("../model/tenpai.model")
+    svc = pyserver.ServerChan()
+    svc.output_to_weixin('Tenpai train done.')
+

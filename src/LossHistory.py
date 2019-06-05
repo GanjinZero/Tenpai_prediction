@@ -26,4 +26,4 @@ class LossHistory(keras.callbacks.Callback):
         plt.ylabel('Cross-entropy loss')
         plt.legend(loc="upper right")
         plt.savefig("../train_loss.jpg")
-        plt.show()
+        # plt.show()
