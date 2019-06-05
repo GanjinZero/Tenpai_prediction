@@ -1,52 +1,28 @@
-  東2局 0本場(リーチ0) YZKTR 3000 松戸の俊 -1500 菌太郎 -1000 シャモア -500 
-    30符 二飜ツモ リーチ 門前清模和 
-    [1西]3p8p9p3s4s8s8s南西北白白発
-    [2北]1m5m6m7m4p6p1s5s7s東白白中
-    [3東]3m5m2p3p4p6p8p9p1s5s7s8s8s
-    [4南]1m4m4m9m1p5p5p7p9p4s4s北中
-    [表ドラ]西 [裏ドラ]北
-    * 3G9s 3D9s 4G中 4d9m 1G8m 1d北 2G4m 2d1s 3G6p 3D6p 4G1p 4d1m
-    * 1G6s 1d南 2G2s 2d1m 3G6s 3D6s 4G2s 4D2s 1C3s4s 1d8m 2C6m7m 2d2s
-    * 3G3s 3G3s 4G7p 4d9p 4R 1G3s 1d9p
+  南3局 0本場(リーチ0) 諸江はるか 48000 Psilocybin -16000 泉れい -16000 烈光ツネmkⅡ -16000 
+    数え役満ツモ 断ヤオ 平和 二盃口 清一色 リーチ 一発 門前清模和 ドラ2 
+    [1南]1p5p7p7p9p3s8s8s南南北白発
+    [2西]1m4m6m4p4p5p9p2s2s8s9s北発
+    [3北]2m7m2p2p3p8p1s4s5s9s西西中
+    [4東]2m3m4m4m5m6m8m4p6p1s4s5s7s
+    [表ドラ]5m [裏ドラ]4s
+    * 4G2m 4d1s 1G1m 1D1m 2G6s 2d1m 3G9s 3d1s 4G7m 4d7s 1G3p 1d3s 2G2p 2d9s
+    * 3G3m 3d中 4G8m 4d6p 1G中 1d8s 2G8p 2d北 3G6s 3d8p 4G5m 4d4p 1G白 1d8s
+    * 2G8p 2d9p 3G5s 3d7m 4G5p 4D5p 1G9m 1D9m 2G1p 2D1p 3G1s 3D1s 4G6m 4d5s
+    * 1G9p 1d北 2G4p 2d2p 3G3p 3d5s 4G6p 4d4s 1G3s 1D3s 2G北 2D北 3G9m 3D9m
+    * 4G7s 4d6p 1G1s 1D1s 2G7p 2d5p 3G4s 3D4s 4G東 4d7s 1G7s 1D7s 2C6s8s 2d7p
+    * 1N 1d5p 2G白 2D白 1N 1d3p 2G東 2d2s 3G7s 3d9s 4G7m 4R 4d東 1G5p 1D5p
+    * 2G9m 2d東 3G中 3d7s 4G3m 4A
 
 
-  東3局 
+      東1局 
     123 
-    [1西]
-    [2北]1m5m6m7m4p6p1s5s7s東白白中
-    [3東]
-    [4南]
-    [表ドラ]西 [裏ドラ]
-    * 3G9s 3D9s 4G中 4d9m 1G8m 1d北 2G4m 2d1s 3G6p 3D6p 4G1p 4d1m
-    * 1G6s 1d南 2G2s 2d1m 3G6s 3D6s 4G2s 4D2s 1C3s4s 1d8m 2C6m7m 2d2s
-    * 3G3s 3G3s 4G7p 4d9p 4R 1G3s 1d9p
+    [1西]3m7m8m9m9m8p3s5s7s9s南白中
+    [2北]1m1m4m6m7m1p1p8p1s8s北白発
+    [3東]3m4m1p4p4p6p9s東東南西発中
+    [4南]2m5m7m8m2p3p4p8p3s6s9s白発
+    [表ドラ]5s [裏ドラ]
+    * 3G2p 3d西 4G7p 4d9s 1G7s 1d南 2G5p 2d1s 3d南 4G9p 4d発 1d白 2G9p 2d発
+    * 3d9s 4G8s 4d白 1d中 2G1s 2D1s 3d発 4G7p 4D7p 1D8p 2G5s 2d白
+    * 3D南 4G1p 4d2m 1d9s 2G西 2d8s 3d中 4G8m 4d3s 1d9m 2G6m 2d西
+    * 3D1m 4G7s 4d1p 4R
 
-  東3局 
-    123 
-    [1西]
-    [2北]1m5m6m7m4p6p1s5s7s東白白中
-    [3東]
-    [4南]
-    [表ドラ]西 [裏ドラ]
-    * 3G9s 3D9s 4G中 4d9m 1G8m 1d北 2G4m 2d1s 3G6p 3D6p 4G1p 4d1m
-    * 1G6s 1d南 2G2s 2d1m 3G6s 3D6s 4G2s 4D2s 1C3s4s 1d8m 2C6m7m 2d2s
-
-  東3局 
-    123 
-    [1西]
-    [2北]1m5m6m7m4p6p1s5s7s東白白中
-    [3東]
-    [4南]
-    [表ドラ]西 [裏ドラ]
-    * 3G9s 3D9s 4G中 4d9m 1G8m 1d北 2G4m 2d1s 3G6p 3D6p 4G1p 4d1m
-    * 1G6s 1d南 2G2s 2d1m 3G6s 3D6s 4G2s 4D2s 1C3s4s 1d8m 2C6m7m 2d2s
-
-  東3局 
-    123 
-    [1西]
-    [2北]1m5m6m7m4p6p1s5s7s東白白中
-    [3東]
-    [4南]
-    [表ドラ]西 [裏ドラ]
-    * 3G9s 3D9s 4G中 4d9m 1G8m 1d北 2G4m 2d1s 3G6p 3D6p 4G1p 4d1m
-    * 1G6s 1d南 2G2s 2d1m 3G6s 3D6s 4G2s 4D2s 1C3s4s 1d8m 2C6m7m 2d2s
