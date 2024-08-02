@@ -1,4 +1,4 @@
 numpy==1.14.2
-Keras==2.2.4
+Keras==2.13.1
 mahjong==1.1.6
 scikit_learn==0.20.3
